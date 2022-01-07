@@ -1,4 +1,4 @@
-name: infrastructure
+name: application
 description: A new Flutter package project.
 version: 0.0.1
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -9,10 +9,11 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  domain:
+  domain: 
     path: ../domain
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.0.1
 
 dev_dependencies:
   flutter_test:
