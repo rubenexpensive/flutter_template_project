@@ -8,7 +8,7 @@ void main() {
 }
 
 Environment _getEnvironment() {
-  switch(const String.fromEnvironment('ENVIRONMENT', defaultValue: 'prod')) {
+  switch(const String.fromEnvironment('environment', defaultValue: 'prod')) {
     case 'dev': return DevEnvironment();
     case 'mock': return MockEnvironment();
     case 'prod': return ProdEnvironment();
